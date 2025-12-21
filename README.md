@@ -34,11 +34,17 @@ The dataset used is CICIDS 2017, created by the Canadian Institute for Cybersecu
 Key characteristics of the dataset include:
 
 •	Flow-based network traffic represented as numerical features
+
 •	Realistic mixes of benign and malicious activity
+
 •	Approximately 78 features per network flow, depending on the export
+
 •	Inclusion of brute-force attacks such as FTP-Patator and SSH-Patator
+
 For this project, the following subsets were used:
+
 •	Benign-Monday-no-metadata.parquet
+
 •	Bruteforce-Tuesday-no-metadata.parquet
 ________________________________________
 
