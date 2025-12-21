@@ -32,6 +32,7 @@ Dataset
 
 The dataset used is CICIDS 2017, created by the Canadian Institute for Cybersecurity at the University of New Brunswick.
 Key characteristics of the dataset include:
+
 •	Flow-based network traffic represented as numerical features
 •	Realistic mixes of benign and malicious activity
 •	Approximately 78 features per network flow, depending on the export
