@@ -22,6 +22,7 @@ Project Overview
 
 The objective of this project is to build a binary classification model capable of identifying brute-force network traffic and separating it from normal activity.
 Traffic labels used in this project:
+
 0 — Normal (benign) network traffic
 1 — Brute-force attack traffic related to FTP or SSH services
 ________________________________________
