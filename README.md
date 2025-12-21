@@ -24,6 +24,7 @@ The objective of this project is to build a binary classification model capable 
 Traffic labels used in this project:
 
 0 — Normal (benign) network traffic
+
 1 — Brute-force attack traffic related to FTP or SSH services
 ________________________________________
 
