@@ -111,14 +111,18 @@ ________________________________________
 Tools
 
 Python
+
 Pandas and NumPy
+
 Scikit-learn
+
 Matplotlib
 ________________________________________
 
 References
 
 CICIDS 2017 Dataset, Canadian Institute for Cybersecurity
+
 https://www.unb.ca/cic/datasets/ids-2017.html
 
 
