@@ -75,13 +75,21 @@ ________________________________________
 How to Run
 
 Install the required dependencies:
+
 pip install pandas numpy scikit-learn matplotlib pyarrow
+
 Open the Jupyter notebook named BruteForceDetection_updated.ipynb.
+
 In the notebook, update the dataset directory path so it points to the folder containing the CICIDS 2017 Parquet files:
+
 DATA_DIR = Path(r"C:\path\to\cicids2017")
+
 Ensure the directory includes the following files:
+
 •	Benign-Monday-no-metadata.parquet
+
 •	Bruteforce-Tuesday-no-metadata.parquet
+
 Run the notebook cells from top to bottom.
 ________________________________________
 
