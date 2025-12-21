@@ -5,6 +5,7 @@ This project explores the use of supervised machine learning to detect brute-for
 ________________________________________
 
 Table of Contents
+
 1.	Project Overview
 2.	Dataset
 3.	Methodology
@@ -18,6 +19,7 @@ Table of Contents
 ________________________________________
 
 Project Overview
+
 The objective of this project is to build a binary classification model capable of identifying brute-force network traffic and separating it from normal activity.
 Traffic labels used in this project:
 0 — Normal (benign) network traffic
@@ -25,6 +27,7 @@ Traffic labels used in this project:
 ________________________________________
 
 Dataset
+
 The dataset used is CICIDS 2017, created by the Canadian Institute for Cybersecurity at the University of New Brunswick.
 Key characteristics of the dataset include:
 •	Flow-based network traffic represented as numerical features
@@ -37,6 +40,7 @@ For this project, the following subsets were used:
 ________________________________________
 
 Methodology
+
 The project followed a standard machine learning workflow.
 First, the CICIDS 2017 data was obtained using KaggleHub or manual download and loaded from Parquet files.
 Next, benign and brute-force traffic were combined into a single dataset. Infinite values were replaced with missing values, and rows containing missing data were removed to create a clean baseline for model training.
@@ -46,18 +50,21 @@ Finally, models were trained and evaluated using accuracy, precision, recall, F1
 ________________________________________
 
 Models
+
 Two supervised classification models were used in this project.
 The first model was a Random Forest classifier. This model was chosen because it performs well on tabular data, captures non-linear relationships, and is robust to noisy features. Class balancing was applied to reduce the impact of dataset imbalance.
 The second model was a linear SVM-style classifier implemented using SGDClassifier. This model provides fast training on large datasets and serves as a strong linear baseline. Feature scaling and class balancing were both required for optimal performance.
 ________________________________________
 
 Results
+
 The Random Forest model achieved near-perfect performance in detecting brute-force attacks. The confusion matrix showed very few misclassifications, and the ROC-AUC score indicated excellent separation between benign and malicious traffic.
 The linear SVM-style model also performed well, but it generally achieved lower recall and overall accuracy compared to the Random Forest classifier.
 These results demonstrate that machine learning models can effectively identify brute-force attacks using flow-based network features.
 ________________________________________
 
 How to Run
+
 Install the required dependencies:
 pip install pandas numpy scikit-learn matplotlib pyarrow
 Open the Jupyter notebook named BruteForceDetection_updated.ipynb.
@@ -70,12 +77,14 @@ Run the notebook cells from top to bottom.
 ________________________________________
 
 Limitations
+
 The dataset is imbalanced, which can cause accuracy to appear inflated. Metrics such as recall, F1-score, and ROC-AUC provide a more reliable evaluation.
 Only brute-force attacks were included in this project, limiting the scope of detection.
 All models were trained offline and were not evaluated in a real-time detection environment.
 ________________________________________
 
 Future Work
+
 Future improvements could include incorporating additional attack types such as botnets or DDoS attacks.
 Deep learning approaches, such as LSTM models, could be explored to capture temporal behavior in network flows.
 Feature selection or dimensionality reduction techniques could be applied to reduce model complexity.
@@ -83,6 +92,7 @@ The model could also be deployed as part of a real-time IDS or SIEM pipeline usi
 ________________________________________
 
 Tools
+
 Python
 Pandas and NumPy
 Scikit-learn
@@ -90,6 +100,7 @@ Matplotlib
 ________________________________________
 
 References
+
 CICIDS 2017 Dataset, Canadian Institute for Cybersecurity
 https://www.unb.ca/cic/datasets/ids-2017.html
 
