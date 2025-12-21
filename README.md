@@ -1,4 +1,5 @@
 Brute-Force Attack Detection with Machine Learning (CICIDS 2017)
+
 Brute-force login attempts continue to be a common attack technique against enterprise networks. While traditional signature-based intrusion detection systems are effective for known patterns, they often struggle to detect large-scale or evolving attacks.
 This project explores the use of supervised machine learning to detect brute-force activity in network traffic. Using flow-based features from the CICIDS 2017 dataset, the goal is to distinguish benign traffic from brute-force attacks targeting FTP and SSH services.
 ________________________________________
